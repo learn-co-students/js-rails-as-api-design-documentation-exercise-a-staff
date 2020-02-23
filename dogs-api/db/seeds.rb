@@ -9,10 +9,10 @@
 require 'faker'
 
 250.times do
-    name = Faker::Dog.name
-    breed = Faker::Dog.breed
-    age = Faker::Dog.age
-    size = Faker::Dog.size
-    phrase = Faker::Dog.meme_phrase
+    name = Faker::Creature::Dog.name
+    breed = Faker::Creature::Dog.breed
+    age = Faker::Creature::Dog.age
+    size = Faker::Creature::Dog.size
+    phrase = Faker::Creature::Dog.meme_phrase
     Dog.create(name: name, breed: breed, age: age, size: size, phrase: phrase)
 end
